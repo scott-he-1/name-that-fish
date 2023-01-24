@@ -1,10 +1,8 @@
 import "./styles/score-board.css";
+import { useState } from "react";
 //  Where the score is presented
-const incorrectCount = 0;
-const correctCount = 0;
-const answersLeft = ["trout", "salmon", "shark", "tuna"];
 
-export const ScoreBoard = () => {
+export const ScoreBoard = ({ answersLeft, incorrectCount, correctCount }) => {
   return (
     <div id="score-board">
       <div>Incorrect 🔻: {incorrectCount}</div>
